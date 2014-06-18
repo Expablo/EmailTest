@@ -139,7 +139,7 @@
 
             function getUser(){
                 $sql="
-                SELECT * FROM user
+                SELECT * FROM user ORDER BY nome
                 ";
 
                 $res = $this->query($sql);
@@ -217,7 +217,7 @@
             }
 
             function totalMessagePorUsuario(){
-                $sql = "SELECT * FROM user";
+                $sql = "SELECT * FROM user ORDER BY nome";
                 $res = $this->query($sql);
                 $row = $this->row($res);
                 $html = "";
@@ -253,7 +253,7 @@
 
             function totalMessageEnviadaPorUsuario(){
                 $html ="";
-                $sql = "SELECT * FROM user";
+                $sql = "SELECT * FROM user ORDER BY nome";
                 $res = $this->query($sql);
                 $row = $this->row($res);
                 if($row > 0){

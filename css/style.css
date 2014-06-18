@@ -293,3 +293,8 @@ vertical-align: bottom;
 .btn-danger{
     background: rgb(202, 60, 60);
 }
+
+.data{
+    float: right;
+    color: #007de5;
+}

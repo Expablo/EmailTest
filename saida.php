@@ -13,6 +13,7 @@ if (count($res) > 0) {
                     <img src='css/ericf-avatar.png' alt=''>
                 </div>
                 <div class='dados-msg'>
+                <small class='data'>{$v['date']}</small>
                     <a href='index.php?p=saida&m={$v['id_msg']}'>
                          <h2>{$v['name']}</h2>
                     <p>{$v['subject']}</p>
