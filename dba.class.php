@@ -56,7 +56,7 @@
                 on
                     message.fk_user = user.id_user
                 WHERE
-                    user_message.fk_user = {$id}";
+                    user_message.fk_user = {$id} ORDER BY dh_message desc";
             $res = $this->query($sql);
             $row = $this->row($res);
             $vet = array();
@@ -93,6 +93,7 @@
                     message
                 WHERE
                     fk_user = {$id}
+                    ORDER BY dh_message desc
                 ";
 
                 $res = $this->query($sql);

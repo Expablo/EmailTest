@@ -20,9 +20,9 @@ $res = $dba->getUmUser($get);
         <p>
             <input type="text" name="nome" placeholder="Nome" value="<?php echo $res['name'] ?>">
         </p>
-            <input type="text" name="senha" placeholder="Senha" value="<?php echo $res['pass_user'] ?>">
+            <input type="password" name="senha" placeholder="Senha" value="<?php echo $res['pass_user'] ?>">
         <p>
-            <input type="text" name="data" placeholder="Data de Nascimento" value="<?php echo $res['data_nasc'] ?>">
+            <input type="date" name="data" placeholder="Data de Nascimento" value="<?php echo $res['data_nasc'] ?>">
         </p>
         <p>
             <input class="submit" type="Submit" value="Salvar">

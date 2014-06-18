@@ -8,9 +8,9 @@
         <p>
             <input type="text" name="nome" placeholder="Nome">
         </p>
-            <input type="text" name="senha" placeholder="Senha">
+            <input type="password" name="senha" placeholder="Senha">
         <p>
-            <input type="text" name="data" placeholder="Data de Nascimento">
+            <input type="date" name="data" placeholder="Data de Nascimento">
         </p>
         <p>
             <input class="submit" type="Submit" value="Salvar">

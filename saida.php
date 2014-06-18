@@ -1,7 +1,10 @@
 <?php
 $res = $dba->saida($id_ses);
-$html = "";
+$html = "<div class='lista-mensagem'>
+                <p>Nenhuma Mensagem Enviada</p>
+            </div>";
 if (count($res) > 0) {
+    $html="";
     foreach ($res as $key => $v) {
         $msg = substr($v['msg'], 0 , 100);
         $html .="
