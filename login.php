@@ -28,7 +28,6 @@ if (isset($post['user']) && !empty($post['user']) and isset($post['pass']) && !e
             <p><input type="password" name="pass" placeholder="Pass"></p>
             <input class="submit" type="submit" value="Logar">
         </form>
-        <p><a href="index.php">Minha pagina</a></p>
         <p><a href="adm.php">Pagina Administrativa</a></p>
     </div>
 </body>
